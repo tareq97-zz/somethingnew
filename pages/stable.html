@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3">
+            
+        </div>
+            
+        <div class="col-lg-6">
+            <div class="table-responsive">
+                <table class="table table-bordered" ng-controller="dataCtrl">
+                    <tr>
+                        <th>#</th>
+                        <th>First</th>
+                        <th>Second</th>
+                        <th>Third</th>
+                    </tr>
+                    
+                    <tr ng-repeat="x in database.mockdb" >
+                        <td>{{x.No}}</td>
+                        <td>{{x.First}}</td>
+                        <td>{{x.Last}}</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+            
+        <div class="col-lg-3">
+                
+        </div>
+    </div>
+</div>
